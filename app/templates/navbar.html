@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,46 +8,42 @@
 
 
 <body>
-<!-- SideNav slide-out button -->
-<a href="#" data-activates="slide-out" class="btn btn-dark p-3 button-collapse"><i
-    class="fas fa-bars"></i></a>
 
-<!-- Sidebar navigation -->
-<div id="slide-out" class="side-nav2 side special-color-dark">
-  <ul class="custom-scrollbar">
-    <!-- Logo -->
-    <li>
-      <div class="logo-wrapper waves-light">
-        <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
-            class="img-fluid flex-center"></a>
-      </div>
-    </li>
-   
-    <li>
-        <form class="form-inline mx-auto" role="search" action="{% url 'search_results' %}" method="get">
-          <div class="form-group">
-            <input type="text" class="form-control" role="search" placeholder="search project" aria-label="Search" name="title">
+<!--Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Stress Awards</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Dropdown
+        </a>
+        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="{% url 'add_profile' %}">Add/ Update your profile</a>
+          <a class="dropdown-item" href="{% url 'upload' %}">Add Projects</a>
+          <a class="dropdown-item" href="/logout">Logout</a>
         </div>
-      </form>
-    </li>
-    <!--/.Search Form-->
-    <!-- Side navigation links -->
-    <li>
-      <ul class="collapsible collapsible-accordion">
-        <li><a class="collapsible-header waves-effect" href="/"><i class="fas fa-chevron-right"></i> HOME PAGE</a>
-        </li>
-        <li><a class="collapsible-header waves-effect" href="{% url 'add_profile' %}"><i class="far fa-hand-pointer"></i>Add/Update Profile </a>
-        </li>
-        <li><a class="collapsible-header waves-effect" href="{% url 'upload' %}"><i class="fas fa-eye"></i> Add Projects</a>
-        </li>
-        <li><a class="collapsible-header waves-effect" href="/logout" ><i class="far fa-envelope"></i> Log OUT</a>
-        </li>     
-    <!--/. Side navigation links -->
-  </ul>
-  <div class="sidenav-bg"></div>
-</div>
-<!--/. Sidebar navigation -->
-
-
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+       <form class="form-inline">
+    <div class="md-form my-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    </div>
+    <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+  </form>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
 </body>
 </html>

@@ -74,3 +74,7 @@ section {
 .button:hover {
     background-color: #4ef9e2;
 }
+
+body {
+    color: black;
+}
