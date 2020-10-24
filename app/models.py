@@ -5,3 +5,4 @@ from django.db.models import Avg
 import numpy as np
 
 # Create your models here.
+class Profile(models.Model):
