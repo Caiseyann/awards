@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 
@@ -23,16 +24,14 @@
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">Dropdown
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'upload' %}">+Projects
         </a>
-        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="{% url 'add_profile' %}">Add/ Update your profile</a>
-          <a class="dropdown-item" href="{% url 'upload' %}">Add Projects</a>
-          <a class="dropdown-item" href="/logout">Login/ Logout</a>
-        </div>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'add_profile' %}">+Profile
+        </a>
+      </li>     
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
        <form class="form-inline">
@@ -41,6 +40,14 @@
     </div>
     <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
   </form>
+      <li class="nav-item active">
+        <a class="nav-link" href="/logout">Logout
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/logout">Login
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
