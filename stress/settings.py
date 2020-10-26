@@ -150,6 +150,6 @@ STATICFILES_DIRS = [
 LOGIN_REDIRECT_URL = '/'
 
 UPLOADCARE = {
-    'pub_key': '....',
-    'secret': '....',
+    'pub_key': '04c47946006e653f2b52',
+    'secret': '1802b01f0a7a7ad5c8ef',
 }
