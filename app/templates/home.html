@@ -16,13 +16,13 @@
 
       <div class="card mr-0" style="max-width:70rem; margin-top:5px;">
 
-        <img src="{{project.project_image.url}}" class="card-img-top">
+        <img src="{{project.project_image.cdn_url}}" class="card-img-top">
         <div class="card-body">
 
           <div class="media">
             <div class="media-left media-top">
               <a href="/profile/{{project.profile.id}}" title="profile">
-                <img class="img-fluid rounded-circle" src="{{project.profile.profile_photo.url}}" class="media-object" style="height: 100px;
+                <img class="img-fluid rounded-circle" src="{{project.profile.profile_photo.cdn_url}}" class="media-object" style="height: 100px;
 width: 100px;">
                 <button class="button"><a href="{{ project.project_link }}" target="_blank">view site</a></button>
               </a>
