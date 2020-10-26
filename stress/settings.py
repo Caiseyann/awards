@@ -148,3 +148,8 @@ STATICFILES_DIRS = [
 
 
 LOGIN_REDIRECT_URL = '/'
+
+UPLOADCARE = {
+    'pub_key': '....',
+    'secret': '....',
+}

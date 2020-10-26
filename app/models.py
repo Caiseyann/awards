@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.db.models import Avg
 import numpy as np
+from pyuploadcare.dj.models import ImageField
 
 # Create your models here.
 class Profile(models.Model):
@@ -32,7 +33,7 @@ class Project(models.Model):
     posted_by = models.ForeignKey(User, null=True)
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE,null=True)
     title = models.CharField(max_length=100, null=True)
-    project_image = models.ImageField(upload_to='projects/',null=True)
+    project_image = ImageField(blank=True, manual_crop="")
     description = models.TextField(null=True)
     project_link = models.TextField(null=True)
 
