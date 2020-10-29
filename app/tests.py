@@ -29,7 +29,7 @@ class ProjectTest(TestCase):
                                           profile = self.profile,
                                           title = 'Blog',
                                           description='turn up',
-                                          project_link= 'https://twingit.herokuapp.com/')
+                                          project_link= 'https://codewarsapi.herokuapp.com/')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.project,Project))
