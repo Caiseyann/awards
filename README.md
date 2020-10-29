@@ -25,7 +25,7 @@ https://stressawards.herokuapp.com/
 * Given > A user wants to use the application
 * When  > user signs in
 * Then > user adds a profile, and  a project
-       > user can rate projects and comment on them
+ * > user can rate projects and comment on them
 ## Support and contact details
 In case of any questions, or tips email me at "caiseyann4@gmail.com" 
 * Also feel free to fork, clone this project and make any necessary changes.
